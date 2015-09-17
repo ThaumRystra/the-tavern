@@ -5,6 +5,7 @@
 		"/bower_components/font-roboto/roboto.html",
 		"/bower_components/iron-flex-layout/classes/iron-flex-layout.html",
 		"/bower_components/iron-flex-layout/iron-flex-layout.html",
+		"/bower_components/google-map/google-map.html",
 
 		"/bower_components/iron-iconset-svg/iron-iconset-svg.html",
 		"/bower_components/iron-iconset/iron-iconset.html",

@@ -1,0 +1,13 @@
+<template name="advertMap">
+	<!--{{> googleMap name="advertMap" options=mapOptions}}-->
+  <google-map class="fit" latitude="37.77493" longitude="-122.41942" fit-to-markers>
+    {{#each adverts}}
+      <google-map-marker latitude={{location.lat}} longitude={{location.lng}}>
+        <h1>{{name}}</h1>
+        <div class="paper-font-body1">
+          {{description}}
+        </div>
+      </google-map-marker>
+    {{/each}}
+  </google-map>
+</template>

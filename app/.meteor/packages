@@ -12,5 +12,10 @@ arillo:flow-router-helpers
 differential:vulcanize
 kadira:blaze-layout
 kadira:flow-router
-sanjo:jasmine
 velocity:console-reporter
+twbs:bootstrap
+aldeed:simple-schema
+aldeed:autoform
+aldeed:collection2
+dburles:google-maps
+yogiben:autoform-map
