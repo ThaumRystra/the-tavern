@@ -1,0 +1,39 @@
+<template name="mainLayout">
+	<paper-drawer-panel id="paperDrawerPanel">
+		<div drawer class="shadow-elevation-8dp">
+
+			<!-- Drawer Toolbar -->
+			<paper-toolbar id="drawerToolbar">
+				<span class="title">Menu</span>
+			</paper-toolbar>
+
+			<!-- Drawer Content -->
+			<paper-menu class="list">
+				<a href="/" class="{{isActivePath '/'}}">
+					<paper-icon-item>
+						<iron-icon icon="home" item-icon></iron-icon>
+						Home
+					</paper-icon-item>
+				</a>
+				<a href="/page2" class="{{isActivePath '/page2'}}">
+					<paper-icon-item>
+						<iron-icon icon="settings" item-icon></iron-icon>
+						Page 2
+					</paper-icon-item>
+				</a>
+			</paper-menu>
+		</div>
+		<div main>
+			{{>Template.dynamic template=content}}
+		</div>
+	</paper-drawer-panel>
+	<paper-toast id="main-toast" duration="6000">
+		{{>Template.dynamic template=toastTemplate data=toastData}}
+	</paper-toast>
+	<paper-dialog
+		id="global-dialog"
+		opened="{{queryParam 'dialog'}}"
+		with-backdrop>
+		{{>Template.dynamic template=dialog}}
+	</paper-dialog>
+</template>
